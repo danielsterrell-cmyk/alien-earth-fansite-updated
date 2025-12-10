@@ -27,41 +27,46 @@
 
   <section class="contact-content">
     <div class="contact-text">
-      <p>Text block 1...</p>
-      <p>Text block 2...</p>
-      <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-      </ul>
-    </div>
+  <p>Send a secure transmission to the Alien: Earth crew. Choose who you want to contact.</p>
+  <p>Whether you're siding with the Aliens or the human crew, we want to hear your stories from the frontier.</p>
+  <p>Use the form to tell us who you are, who you’re contacting, and what message you want relayed across the galaxy. All messages will be read and relayed over!</p>
+  <ul>
+    <li>Share fan theories about upcoming episodes - Spoiler Alerts</li>
+    <li>Thoughts on past episodes? We want to hear them.</li>
+    <li>Send questions to your favorite character</li>
+  </ul>
+</div>
+
 
     <div class="contact-form-wrapper">
-      <form method="POST" action="https://script.google.com/macros/s/AKfycbz6cewkwC6P68-qotOokhBb_v1Zxr3aozRItX-rFramd4p_7R3XzwHLj7o1mN-6Okez/exec">
-  <label>
+    <form method="POST" action="https://script.google.com/macros/s/AKfycbz6cewkwC6P68-qotOokhBb_v1Zxr3aozRItX-rFramd4p_7R3XzwHLj7o1mN-6Okez/exec">
+  <label for="name">
     Name:
-    <input type="text" name="name" required>
+    <input id="name" type="text" name="name" required>
   </label>
 
-  <label>
+  <label for="email">
     Email:
-    <input type="email" name="email" required>
+    <input id="email" type="email" name="email" required>
   </label>
 
-  <label>
+  <label for="contact-person">
     Who are you contacting?
-    <select name="target">
+    <select id="contact-person" name="contact_person">
       <option value="alien">The Alien</option>
-      <option value="captain">The Captain</option>
-      <option value="scientist">The Scientist</option>
+      <option value="wendy">Wendy</option>
+      <option value="kirsh">Kirsh</option>
+      <option value="hermit">Hermit</option>
+      <option value="crew">The Earth: Alien Crew</option>
     </select>
   </label>
 
-  <label>
+  <label for="message">
     Message:
-    <textarea name="message" rows="4"></textarea>
+    <textarea id="message" name="message" rows="4"></textarea>
   </label>
 
-  <button type="submit">Send Transmission</button>
+  <button type="submit">Send a Transmission NOW</button>
 </form>
 
     </div>
