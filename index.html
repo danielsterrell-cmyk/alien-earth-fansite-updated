@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alien: Earth – Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+ <main class="home-container">
+  <section class="hero">
+    <img src="images/main-logo.webp" alt="Alien: Earth logo">
+    <h1>Alien: Earth</h1>
+    <p>A sci‑fi series that brings an alien threat to our home planet for the first time.</p>
+  </section>
+
+  <section class="overview">
+    <h2>About the Series</h2>
+   
+     <img src="images/city-attach.webp" alt="City attacked landscape">
+
+    <p>Alien: Earth is a science fiction horror television series created by Noah Hawley, based on the Alien universe. Set on Earth in the near future, it follows a group of scientists, soldiers, and corporate agents as they confront a rapidly evolving alien threat.</p>
+    <p>The show combines deep character drama with suspense, body horror, and big questions about corporate power, AI, and survival.</p>
+    <ul>
+      <li>The Setup: The horror begins when a Weyland‑Yutani research ship, the USCSS Maginot, crashes into a city owned by their rival, the Prodigy Corporation, unleashing Xenomorphs onto the planet.</li>
+      <li>The Protagonists: The central characters are a group of young "Hybrids"—dying human minds transferred into synthetic bodies by Prodigy's CEO, Boy Kavalier. The main Hybrid, Wendy, has a unique ability to sense or potentially communicate with the Xenomorphs.</li>
+      <li>Key Themes: The series explores the dangers of corporate greed, ethical issues of AI/experimentation, and the struggle for humanity and survival.</li>
+      <li>The Threat: In addition to classic Xenomorphs, the show introduces new alien lifeforms, setting the stage for intense action and body horror.</li>
+    </ul>
+  </section>
+
+  <section class="quick-facts">
+    <h2>Series Facts</h2>
+    <table>
+      <tr>
+        <th>Genre</th>
+        <td>Sci‑Fi Horror</td>
+      </tr>
+      <tr>
+        <th>Creator</th>
+        <td>Noah Hawley</td>
+      </tr>
+      <tr>
+        <th>Network</th>
+        <td>FX / Hulu</td>
+      </tr>
+      <tr>
+        <th>Premiere</th>
+        <td>August 12, 2025</td>
+      </tr>
+      <tr>
+        <th>Seasons</th>
+        <td>1 (Season 1)</td>
+      </tr>
+    </table>
+  </section>
+
+<aside class="promo">
+  <h2>Why Watch?</h2>
+  <ul>
+    <li>First Alien story set on Earth.</li>
+    <li>From the creator of Fargo and Legion.</li>
+    <li>Blend of psychological tension and creature horror.</li>
+    <li>Explores the origins of the Alien universe in a new way.</li>
+  </ul>
+
+  <div class="trailer">
+    <h3>Watch the Trailer</h3>
+    <button id="show-trailer">Show Trailer</button>
+    <div id="trailer-container" style="display: none; margin-top: 10px;">
+ <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/RL2dsqKJE1U?si=sEEjNvuaWhzo5-aT"
+  title="YouTube video player"
+  style="border: 0;"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen></iframe>
+
+    </div>
+  </div>
+</aside>
+
+</main>
+
+
+  <footer>
+    <p>&copy; SDEV106 Class Project</p>
+  </footer>
+
+
+  <script>
+  const button = document.getElementById("show-trailer");
+  const trailer = document.getElementById("trailer-container");
+
+  button.onclick = function () {
+    if (trailer.style.display === "none") {
+      trailer.style.display = "block";
+      button.textContent = "Hide Trailer";
+    } else {
+      trailer.style.display = "none";
+      button.textContent = "Show Trailer";
+    }
+  };
+</script>
+
+</body>
+</html>
+
+
+  <footer>
+    <p>SDEV106 Class Project</p>
+  </footer>
+</body>
+</html>

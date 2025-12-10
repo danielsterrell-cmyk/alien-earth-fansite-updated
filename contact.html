@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Alien: Earth Crew</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="characters.html">Characters</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+ <main class="contact-container">
+  <h1>Contact the Alien: Earth Crew</h1>
+  <img src="images/eyes-peering.webp" alt="Eyes peering" class="episodes-banner">
+
+  <section class="contact-intro">
+    <h2>Send a Transmission <!--insert transmission mail symbol emoji--> </h2>
+    <p>Intro text here...</p>
+  </section>
+
+  <section class="contact-content">
+    <div class="contact-text">
+      <p>Text block 1...</p>
+      <p>Text block 2...</p>
+      <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+      </ul>
+    </div>
+
+    <div class="contact-form-wrapper">
+      <form method="POST" action="https://script.google.com/macros/s/AKfycbz6cewkwC6P68-qotOokhBb_v1Zxr3aozRItX-rFramd4p_7R3XzwHLj7o1mN-6Okez/exec">
+  <label>
+    Name:
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    Email:
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    Who are you contacting?
+    <select name="target">
+      <option value="alien">The Alien</option>
+      <option value="captain">The Captain</option>
+      <option value="scientist">The Scientist</option>
+    </select>
+  </label>
+
+  <label>
+    Message:
+    <textarea name="message" rows="4"></textarea>
+  </label>
+
+  <button type="submit">Send Transmission</button>
+</form>
+
+    </div>
+  </section>
+</main>

@@ -1,0 +1,274 @@
+*  {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #050608;
+  color: #e0e0e0;
+}
+
+
+nav {
+  background-color: #101820;
+  padding: 10px 0;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+nav a {
+  color: #8bff73;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+footer {
+  background-color: #101820;
+  color: #888;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+
+.home-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+
+/* Name grid areas */
+.hero { grid-area: hero; }
+.overview { grid-area: overview; }
+.quick-facts { grid-area: facts; }
+.promo { grid-area: promo; }
+.overview img {
+  display: block;
+  width: 100%;        /* fill the overview section */
+  height: auto;       /* keep correct proportions */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+/* Mobile layout (one column) */
+.home-container {
+  grid-template-areas:
+    "hero"
+    "overview"
+    "facts"
+    "promo";
+}
+
+
+.hero {
+  background-color: #101820;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.overview,
+.quick-facts,
+.promo {
+  background-color: #151820;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* Table styling */
+.quick-facts table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+
+.quick-facts th,
+.quick-facts td {
+  padding: 8px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+
+.quick-facts th {
+  color: #8bff73;
+}
+
+
+/* Promo list */
+.promo ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+
+/* Tablet layout */
+@media (min-width: 600px) {
+  .home-container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "hero hero"
+      "overview promo"
+      "facts promo";
+  }
+}
+
+
+/* Desktop layout */
+@media (min-width: 900px) {
+  .home-container {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "hero hero promo"
+      "overview overview promo"
+      "facts facts promo";
+  }
+}
+
+
+
+.characters-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+
+.characters-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.character-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+
+.character-card {
+  background-color: #151820;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+  .character-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.reviews {
+  margin-top: 20px;
+  background-color: #101820;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 700px) {
+  .character-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+
+.episodes-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+
+.episodes-container h1 {
+  text-align: center;
+}
+
+
+.episode-featured,
+.episode-list,
+.season-info {
+  background-color: #151820;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.episode-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+
+.episode {
+  border-left: 4px solid #8bff73;
+  padding-left: 10px;
+}
+
+.episodes-banner {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.episode img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+/* Tablet+ layout */
+@media (min-width: 700px) {
+  .episodes-container {
+    grid-template-columns: 2fr 1fr;
+  }
+
+
+  .episode-featured {
+    grid-column: 1 / -1; /* full width */
+  }
+
+
+  .episode-list {
+    grid-column: 1 / 2;
+  }
+
+
+  .season-info {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
